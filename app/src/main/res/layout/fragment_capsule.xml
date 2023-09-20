@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.CapsuleFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#C6FCFF"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/back_BTN"
+            android:src="@drawable/back"
+            android:clickable="true"
+            android:focusable="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:text="Blood"
+            android:gravity="start"
+            android:fontFamily="serif"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textStyle="bold"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="150dp"
+            android:layout_marginStart="60dp"
+            android:layout_height="40dp"
+            android:padding="50dp"
+            app:cardCornerRadius="15dp"
+            app:strokeColor="#87CEEB"
+            app:strokeWidth="2dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icons8_clock_48"
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="6dp"
+                android:textSize="20sp"
+                android:textColor="#87CEEB"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textColor="#87CEEB"
+                android:text="min"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablayout"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:id="@+id/viewPagerTab">
+        </androidx.viewpager.widget.ViewPager>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="Up next :"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="25dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#87CEEB"
+                android:translationZ="1dp"
+                android:padding="3dp"
+                >
+
+                <TextView
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text Notes"
+                    android:textSize="20sp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/icons8_arrow_50"
+                    android:rotation="180"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

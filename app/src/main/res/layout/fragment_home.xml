@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintVertical_bias="0.293">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFE5B4"
+            android:translationZ="1dp"
+            android:padding="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/hourglass"
+                android:textColor="#00008B"
+                android:text="10:00"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

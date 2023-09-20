@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C6FCFF"
+    tools:context=".fragments.QuizFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:alpha="0.2"
+        android:layout_centerVertical="true"
+          />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                app:cardCornerRadius="25dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#87CEFA"
+                    android:translationZ="1dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/question_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Question"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/question_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:layout_toEndOf="@id/question_text"
+                        android:textSize="20sp"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="5dp"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="15dp"
+                android:translationZ="1dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/question"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="Erythrocyte is another name for a:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:textSize="18sp"
+                    />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/tvOption1"
+                app:cardCornerRadius="25dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFE5B4"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/option1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RBC"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="25dp"
+                android:id="@+id/tvOption2"
+                android:clickable="true"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFE5B4"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/option2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WBC"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="25dp"
+                android:id="@+id/tvOption3"
+                android:clickable="true"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFE5B4"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/option3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PLATELETS"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="start"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/checkAnswer"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            android:translationZ="1dp"
+            app:cardBackgroundColor="#DBA6F7"
+
+            >
+
+            <TextView
+                android:id="@+id/btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Answer"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/checkScore"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            android:translationZ="1dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="#DBA6F7"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/btn_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Score"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/nextQuestion"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            android:translationZ="1dp"
+            app:cardBackgroundColor="#87CEEB"
+            android:layout_toEndOf="@id/checkAnswer"
+            android:layout_marginStart="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+               android:layout_gravity="center"
+                android:src="@drawable/icons8_arrow_50"
+                android:rotation="180"
+
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
